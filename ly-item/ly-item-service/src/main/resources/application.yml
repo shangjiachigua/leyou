@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  #配置服务在注册中心中的名字
+  application:
+    name: item-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
